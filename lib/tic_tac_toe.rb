@@ -44,7 +44,7 @@ def input_to_index(input)
 end
 
 def valid_move?(board, index)
-  return true if index.between?(0,10) && valid_position?(board, index) 
+  return true if index.between?(0,10) && valid_position?(board, index)
   return false
 
 end
