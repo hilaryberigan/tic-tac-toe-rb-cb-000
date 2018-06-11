@@ -1,7 +1,7 @@
 def play(board)
   until over?(board)
     turn(board)
-    draw?(board)
+
   end
   if won?(board)
     puts "Congratulations #{winner(board)}!"
@@ -109,7 +109,7 @@ def draw?(board)
 end
 
 def over?(board)
-  full?(board) || won?(board)
+  full?(board) || won?(board) || draw?(board)
 end
 
 def winner(board)
