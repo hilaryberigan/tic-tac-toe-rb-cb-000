@@ -49,7 +49,7 @@ def valid_move?(board, index)
 end
 
 def valid_position?(board,index)
-  return true if board[index].empty?
+  return true if board[index].empty? || board[index].nil?
   return false
 end
 
