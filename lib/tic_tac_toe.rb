@@ -46,11 +46,10 @@ end
 def valid_move?(board, index)
   return true if index.between?(0,10) && valid_position?(board, index)
   return false
-
 end
 
 def valid_position?(board,index)
-  return true if board[index] == "" || board[index] == " " || board[index] == nil
+  return true if board[index].empty?
   return false
 end
 
